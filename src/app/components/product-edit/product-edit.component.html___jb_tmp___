@@ -30,7 +30,7 @@
       <label>Available</label>
       </div>
     </div>
-    <div class="mt-xxl-1">
+    <div class="mt-lg-3">
     <button class="btn btn-success" (click)="onUpdateProduct()">Save</button>
     </div>
   </form>
