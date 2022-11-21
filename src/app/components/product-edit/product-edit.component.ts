@@ -34,6 +34,8 @@ export class ProductEditComponent implements OnInit{
   }
 
   onUpdateProduct(){
+    this.submitted=true;
+    if (this.productFormGroup?.invalid) return;
     this.productService.updateProducts(this.productFormGroup?.value)
       .subscribe(data=>{
         alert("success product updated");

@@ -10,6 +10,7 @@ import {Product} from "../models/products.model";
 export class ProductsService {
 
   constructor( private http:HttpClient) { }
+
   getAllProducts():Observable<Product[]>{
     let host=environment.host;
     return this.http.get<Product[]>(host+"/products");
